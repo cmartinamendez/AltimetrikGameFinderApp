@@ -1,0 +1,202 @@
+:root {
+    /* -----NEUTRALS----- */
+    --snow: #ffffff;
+    --mink: #f0f0f0;
+    --smoke: #f0f0f0;
+    --pebbles: #d8d8d8;
+    --pewter: #c4c4c4;
+    --fossil: #939393;
+    --ashtray: #515151;
+    --charcoal: #303030;
+    --shadow: #141414;
+    /* -----PRIMARY----- */
+    --mint-condition: #5fe19b;
+    --so-jaded: #36b972;
+    --kate-moss: #067b3c;
+    /* -----SECONDARY----- */
+    --hey-honey: #ffdc22;
+    --coral-reef: #fb5f5f;
+    --deep-blue: #06207b;
+    --lapis-lazuli: #1245c9;
+    --cool-iris: #5f81fb;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/BG.png) no-repeat; /* background provisional */
+}
+.login {
+    position: absolute;
+    top: 120px; 
+    left: 932px; 
+    border-radius: 12px;
+    font-family: 'Exo', sans-serif;
+}
+.form__container {
+    height: 702px;
+    width: 462px;
+    background-color: var(--shadow);
+    opacity: 80%;
+    background-blend-mode: overlay;
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+.form__container form {
+    margin: 34px auto;
+}
+/* ----- text form ----- */
+.form__bold,
+p,
+.form__register-link { 
+    color: var(--mink);   
+    text-align: center;
+}
+.form__bold{
+    font-size: 20px;
+}
+ /* ----- inputs form ----- */
+.form__input {
+    background-color: var(--snow);
+    border: none;
+    border-left: 1px solid var(--charcoal);
+    font: "Exo", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--ashtray);
+    height: 47px;
+    width: 346px; 
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 16px;
+    padding-left: 16px;
+}
+
+.form__input-container {
+    position: relative;
+    width: 25px;
+}
+.icon__show-password {
+    color:var(--mint-condition);
+	position: absolute;
+	width: 30px;
+	height: 25px;
+	left: 320px;
+	top: 62%;
+	transform: translateY(-50%);
+    cursor: pointer;
+}
+
+ /* ----- Remember me - Forgot Password ----- */
+.form__btn { 
+    display: flex;
+    width: 362px;
+    height: 22px;
+    border-radius: 6px;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.form__check-remember label {
+    color: var(--mink);
+    font-weight: 400;
+} 
+#form__forgotpwd {
+    text-align: right;
+    text-decoration: none;
+    width: 150px;
+    bottom: 424px;
+    left: 200px;
+    color: #5fe19b;
+    font-weight: 400;
+}
+ /* ----- Login button ----- */
+.form__btn-login {
+    width: 362px;
+    height: 47px;
+    border-radius: 6px;
+    margin: 20px 0 21px 0;
+    color:var(--mink);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: var(--mint-condition);
+}
+/* ----- Not registered? Register now ----- */
+.form__register-link {
+    font-family: 'Open Sans', 'Exo', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.form__register-link a {
+    text-decoration:none;
+    color: var(--mint-condition);
+}
+/* -------DIVISION FORM------- */
+.form__division {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.form__division p {
+    color:var(--mink);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+}
+.form__division-line1 {
+    width: 148px;
+    height: 0px;
+    border-bottom: 1px solid var(--fossil); 
+    margin-bottom: 20px;
+}
+.form__division-line2 {
+    align-content: right;
+    width: 148px;
+    height: 0px;
+    border-bottom: 1px solid var(--fossil); 
+    margin-bottom: 20px;
+} 
+
+/* ------- LOGO HEADER ------- */
+.darklogo__gamefinder {
+        position: relative;
+        height: 45px;
+        width: 293px;
+        left: 45px;
+        top: 43px;
+}
+
+/* ----------- LOGIN SOCIAL NETWORK BUTTONS----------- */
+.login__social-container{ 
+    border: 1px solid var(--mink);
+    border-radius: 6px;
+    height: 47px;
+    width: 362px;
+    margin-top: 16px;
+    align-self: center;
+    display: flex;
+    align-items: center; 
+ }
+ .login__social-network {
+    align-content: center;
+    color: var(--mink);
+    text-decoration: none;
+    padding-right: 60px;
+    padding-top: 23px;
+    height: 47px;
+    width: 362px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+ }
+ .social__icon img {
+    padding: 14px 0px 13px 61px;
+    border-color: 1px solid var(--mink);
+}
+
+/* ------- Falta carousel, funcionalidad show/hide pwd, chevron y slider ------- */
+
